@@ -1,0 +1,131 @@
+/* Общие стили */
+
+:root {
+    --dark: #2F2F31;
+    --light: #F3F3F4;
+    --lightgray: #E4E8F0;
+    --blue: #54ADDF;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark);
+    margin: 0;
+    background-color: var(--lightgray);
+}
+
+.container {
+    width: 75%;
+    padding: 50px;
+    margin: 2% auto;
+    background-color: var(--light);
+    border-radius: 31px;
+    box-shadow: 0px 10px 22px -7px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+    margin: 0;
+}
+
+strong {
+    color: var(--blue);
+}
+
+/* index.php */
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input[type="submit"] {
+    margin: 1% auto;
+    width: 33%;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 1% 2%;
+    font-weight: bold;
+    font-size: 24px;
+    box-shadow: 0px 10px 22px -7px rgba(0, 0, 0, 0.25);
+    transition: 0.2s ease-out;
+}
+
+input[type="submit"]:hover {
+    opacity: 90%;
+}
+
+input[type="submit"]:focus {
+    box-shadow: 0px 10px 22px -7px rgba(84, 173, 223, 0.5);
+    outline: 3px solid var(--blue);
+    opacity: 90%;
+}
+
+input[type="submit"]:active {
+    opacity: 50%;
+}
+
+input[type="number"] {
+    padding: 10px;
+    margin-top: 1%;
+    font-size: 24px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--dark);
+    color: var(--light);
+    transition: 0.2s ease-out;
+    box-shadow: 0px 10px 22px -7px rgba(0, 0, 0, 0.25);
+}
+
+input[type="number"]:focus {
+    box-shadow: 0px 10px 22px -7px rgba(84, 173, 223, 0.5);
+    outline: 3px solid var(--blue);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+select {
+    padding: 10px;
+    font-size: 24px;
+    margin-top: 1%;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--dark);
+    color: var(--light);
+    transition: 0.2s ease-out;
+    box-shadow: 0px 10px 22px -7px rgba(0, 0, 0, 0.25);
+}
+
+select:focus {
+    outline: 3px solid var(--blue);
+    box-shadow: 0px 10px 22px -7px rgba(84, 173, 223, 0.5);
+}
+
+/* result.php */
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 3%;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
